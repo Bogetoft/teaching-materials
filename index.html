@@ -5,28 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undervisningsmaterialer — Rasmus A.K. Bogetoft</title>
     <style>
-        body { font-family: system-ui, sans-serif; max-width: 700px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.4rem; border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
-        h2 { font-size: 1.1rem; margin-top: 2rem; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Garamond, 'EB Garamond', Georgia, 'Times New Roman', serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+            line-height: 1.7;
+            color: #111;
+            background: #fff;
+        }
+
+        header {
+            padding: 2.5rem 0 1rem;
+        }
+
+        header a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #111;
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        header a:hover { opacity: 0.6; }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 1.35;
+            margin: 2rem 0 1.5rem;
+            color: #111;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        a { color: #111; text-decoration: none; border-bottom: 1px solid #ccc; }
+        a:hover { border-bottom-color: #111; }
+
         ul { list-style: none; padding: 0; }
         li { margin: 0.5rem 0; }
-        a { color: #1a5276; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .pdf::before { content: "📄 "; }
-        footer { margin-top: 3rem; font-size: 0.85rem; color: #888; border-top: 1px solid #ddd; padding-top: 1rem; }
+
+        footer {
+            margin-top: 5rem;
+            padding: 1.5rem 0;
+            font-size: 0.85rem;
+            color: #999;
+            border-top: 1px solid #eee;
+        }
+
+        footer a { color: #999; border-bottom: none; }
+        footer a:hover { color: #111; }
+
+        @media (max-width: 600px) {
+            body { padding: 0 1.2rem; }
+            h1 { font-size: 1.6rem; }
+        }
     </style>
 </head>
 <body>
-    <h1>Undervisningsmaterialer — Rasmus A.K. Bogetoft</h1>
+    <header>
+        <a href="https://bogetoft.github.io">Rasmus A.K. Bogetoft</a>
+    </header>
 
-    <h2>E&amp;K — Noter</h2>
+    <h1>Undervisningsmaterialer</h1>
+
+    <h2>E&amp;K &mdash; Noter</h2>
     <ul>
-        <li class="pdf"><a href="ek/noter/aftaleret.pdf">Aftaleret — overblik og noter</a></li>
+        <li><a href="ek/noter/aftaleret.pdf">Aftaleret &mdash; overblik og noter</a></li>
     </ul>
 
     <h2>Vejledning</h2>
     <ul>
-        <li class="pdf"><a href="vejledning/Vejledningsnote.pdf">Vejledningsnote</a></li>
+        <li><a href="vejledning/Vejledningsnote.pdf">Vejledningsnote</a></li>
     </ul>
 
     <footer>
